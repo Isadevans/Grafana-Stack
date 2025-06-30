@@ -6,8 +6,8 @@ scrape_configs:
 
   - job_name: "strapi"
     metrics_path: "/api/metrics"
+    scheme: https
     static_configs:
-      - scheme: https
       - targets: [ "nexus-back.up.railway.app" ]
   # - job_name: 'example_api'
   #   scheme: http
