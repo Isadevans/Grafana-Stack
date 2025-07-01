@@ -6,7 +6,7 @@ services:
     build:
       context: ./prometheus
       dockerfile: dockerfile
-    user: root # required for data persistence
+    user: root
     ports:
       - "9090:9090"
     volumes:
