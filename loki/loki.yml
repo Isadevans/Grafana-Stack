@@ -12,6 +12,9 @@ common:
   replication_factor: 1
   path_prefix: /loki
 
+limits_config:
+  volume_enabled: true
+
 schema_config:
   configs:
   - from: 2025-01-01
